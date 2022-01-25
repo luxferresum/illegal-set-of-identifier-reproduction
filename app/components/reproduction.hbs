@@ -1,0 +1,19 @@
+<p>
+  To demonstrate the problem open the ember-inspector, activate the data module, then press the button.
+</p>
+<p>
+  To activate the data module it sometimes seems necessary to click on the <em>Data</em> in the leftmost column.
+  And while nothing happens, when the button is then pressed the error is reproduced.
+  While sometimes without doing this there will be no error.
+</p>
+<p>
+  When the inspector says "Ember application not detected!" the error can not be reproduced.
+</p>
+<p>
+  When the dev tools are closed or the ember-inspector has not been activated yet there will be no error.
+</p>
+<button type="button" {{on "click" this.demonstrateProblem}}>demonstrate Problem</button>
+
+<h3>Result:</h3>
+<hr>
+{{this.result}}
